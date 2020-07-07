@@ -1,0 +1,79 @@
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');*/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+p:not(:last-child) {margin:0 0 20px}
+.welcome-panel-content {overflow:auto}
+main {padding:20px 16px}
+section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ccc;
+}
+.inner_panel {
+    background-color: #f8f8f8;
+    padding: 15px 20px;
+}
+.inner_panel p {font-size: 1.2em;}
+.postbox-wrapper {
+	padding-top: 16px;
+	overflow: auto;
+}
+section .postbox-container {width: 25%;}
+p ~ a.button {margin-top: 0 !important}
+#welcome {margin-left:0;max-width:100%;}
+#dashboard-tab input {display: none;}
+#dashboard-tab label {
+	display: inline-block;
+	padding: 5px 10px;
+	font-weight: 600;
+	color: #555;
+	margin-left: 0.5em;
+	margin-bottom: -0.09em;
+	border: 1px solid #ccc;	background-color: #f0f0f0;
+}
+#dashboard-tab label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+.edit-box.open-box {opacity:1;text-decoration:none !important;font-weight:700}
+#dashboard-tab label:hover {cursor: pointer;}
+#dashboard-tab input:checked + label {
+	border: 1px solid #ccc;
+	border-bottom: 1px solid #fff;
+	background-color: #fff;
+}
+#tab1:checked ~ #welcome,
+#tab2:checked ~ #account_faq,
+#tab3:checked ~ #web_support,
+#tab4:checked ~ #add-on_services {
+  display: block;
+}
+#dashboard-tab .fa {padding-right: 10px;}
+#dashboard-tab .postbox-container p {
+    padding-right: 20px;font-size:15px
+}
+#dashboard-tab .postbox-container h3 {
+    margin-bottom: 12px;
+}
+@media screen and (max-width: 799px) {
+    #dashboard-tab label{margin-left:0}
+    section .postbox-container,#add-on_services .postbox-container {width: 100%;}
+    .inner_panel p {font-size: 1em;}
+    .hidden-sm{display:none}
+}
+
+@media screen and (max-width: 499px) {
+    
+}
+#add-on_services .postbox-container {
+    padding: 20px;
+    width: 21.6%;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+}
+#add-on_services .postbox-container:first-child{margin-left:0}
+#add-on_services .postbox-container:last-child{margin-right:0}
+.sslc-banner .bg-banner {
+    background: url(//cdnassets.com/ui/resellerdata/750000_779999/769336/supersite2/supersite/themes/EliteGreen-ResponsiveTheme/images/ssl-bg-banner.gif) no-repeat bottom right;
+}
